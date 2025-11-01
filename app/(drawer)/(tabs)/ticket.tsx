@@ -6,13 +6,12 @@ export default function TicketScreen() {
     <ScrollView
       style={{
         flex: 1,
-        backgroundColor: "#F4F1E8", // warna latar krem lembut
+        backgroundColor: "#F4F1E8",
         paddingHorizontal: 20,
         paddingTop: 60,
       }}
       showsVerticalScrollIndicator={false}
     >
-      {/* Header */}
       <View
         style={{
           flexDirection: "row",
@@ -26,7 +25,6 @@ export default function TicketScreen() {
         <Ionicons name="ellipsis-vertical" size={20} color="black" />
       </View>
 
-      {/* Current Location */}
       <View style={{ marginBottom: 20 }}>
         <Text style={{ color: "#777", fontSize: 14 }}>Current locations</Text>
         <View style={{ flexDirection: "row", alignItems: "center", marginTop: 5 }}>
@@ -40,7 +38,6 @@ export default function TicketScreen() {
         </View>
       </View>
 
-      {/* Category Tabs */}
       <View style={{ flexDirection: "row", marginBottom: 20 }}>
         {["Hotel", "Aircraft", "Villa", "Attraction"].map((label, index) => {
           const active = label === "Aircraft";
@@ -69,7 +66,6 @@ export default function TicketScreen() {
         })}
       </View>
 
-      {/* Date Section */}
       <View style={{ marginBottom: 25 }}>
         <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 10 }}>
           <Text style={{ fontSize: 18, fontWeight: "600" }}>June, 2025</Text>
@@ -81,7 +77,6 @@ export default function TicketScreen() {
           />
         </View>
 
-        {/* Days */}
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           {[
             { day: "S", date: "22" },
@@ -123,11 +118,9 @@ export default function TicketScreen() {
         </View>
       </View>
 
-      {/* Ticket Count */}
       <Text style={{ fontSize: 16, fontWeight: "600", marginBottom: 15 }}>4 Tickets Found</Text>
 
-      {/* Ticket Card */}
-      {Array.from({ length: 2 }).map((_, i) => (
+      {Array.from({ length: 4 }).map((_, i) => (
         <View
           key={i}
           style={{
@@ -142,7 +135,7 @@ export default function TicketScreen() {
             elevation: 2,
           }}
         >
-          {/* Left Orange Bar */}
+
           <View
             style={{
               backgroundColor: "#FF6B3D",
@@ -176,7 +169,6 @@ export default function TicketScreen() {
             </View>
           </View>
 
-          {/* Ticket Info */}
           <View style={{ flex: 1, padding: 15, justifyContent: "space-between" }}>
             <View
               style={{

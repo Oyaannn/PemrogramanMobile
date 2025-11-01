@@ -3,7 +3,9 @@ import { Stack } from "expo-router";
 export default function RootLayout() {
     return (            // kalo mau tambahin screen atau tampilkan, tambahin di dalam Stack.Screen nya
         <Stack screenOptions={{ headerShown: false }}>
-            {/* <Stack.Screen name="tourist-destination/LabuanBajoScreen" options={{ headerShown: false}}/> */}
+            {/* <Stack.Screen name="fetch api/screens/MovieListScreen" options={{ title: "Movie List" }} />
+            <Stack.Screen name="fetch api/detail/[id]" options={{ title: "Movie Detail" }} />
+            <Stack.Screen name="tourist-destination/LabuanBajoScreen" options={{ headerShown: false}}/> */}
             <Stack.Screen name="start" options={{ headerShown: false }} />
             <Stack.Screen name="(drawer)" options={{headerShown: false}} />
             <Stack.Screen name="product/[id]" options={{ title: "Product Details" }} />

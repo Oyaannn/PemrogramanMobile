@@ -6,6 +6,8 @@ export default function ProductDetail() {
 	const params = useLocalSearchParams();
 	const { id } = params as { id?: string };
 
+
+
 	return (
 		<View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
 			<Text style={{ fontSize: 20 }}>Product Detail</Text>

@@ -4,7 +4,6 @@ import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 export default function SettingsScreen() {
   return (
     <ScrollView style={{ flex: 1, backgroundColor: "#F9F9E0" }}>
-      {/* Header */}
       <View
         style={{
           backgroundColor: "#0B132B",
@@ -17,7 +16,6 @@ export default function SettingsScreen() {
         <Text style={{ color: "#fff", fontSize: 26, fontWeight: "bold" }}>Profile</Text>
       </View>
 
-      {/* Profile Section */}
       <View
         style={{
           alignItems: "center",
@@ -34,11 +32,10 @@ export default function SettingsScreen() {
             borderColor: "#fff",
           }}
         />
-        <Text style={{ fontSize: 20, fontWeight: "bold", marginTop: 10 }}>Royan</Text>
-        <Text style={{ color: "#555" }}>email@example.com</Text>
+        <Text style={{ fontSize: 20, fontWeight: "bold", marginTop: 10 }}>Arroyan</Text>
+        <Text style={{ color: "#555" }}>muhammad.irpan_ti23@nusaputra.ac.id</Text>
       </View>
 
-      {/* Settings Options */}
       <View style={{ paddingHorizontal: 25, gap: 15 }}>
         <TouchableOpacity
           style={{
@@ -109,7 +106,6 @@ export default function SettingsScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* Logout Button */}
       <View style={{ alignItems: "center", marginTop: 40, marginBottom: 60 }}>
         <TouchableOpacity
           style={{
