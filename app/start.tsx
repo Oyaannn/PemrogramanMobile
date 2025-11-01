@@ -20,7 +20,7 @@ const StartScreen = () => {
           <Text style={styles.title}>Your Next Adventure Starts Here</Text>
           <Text style={styles.subtitle}>
             Life’s too short to stay in one place. Find your next favorite city,
-            beach, or mountain and let's get moving!
+            beach, or mountain and lets get moving!
           </Text>
 
           <Link
